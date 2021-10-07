@@ -17,6 +17,10 @@ Open the [Android](add_to_app/fullscreen/android_fullscreen) module with Android
 ## For iOS
 Open the [iOS](add_to_app/fullscreen/ios_fullscreen/IOSFullScreen.xcworkspace) module with Xcode, and run it to view the result.
 
+## The App running
+
+<img src="https://github.com/hernandazevedozup/flutter-samples/blob/master/beagle_flutter_native_android.gif" width="500" height="800" />
+
 
 ## Things to know 
 
