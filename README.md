@@ -16,3 +16,19 @@ To run this code, just download the repository https://github.com/ZupIT/beagle-b
 Open the [Android](add_to_app/fullscreen/android_fullscreen) module with Android studio and run it to view the result.
 ## For iOS
 Open the [iOS](add_to_app/fullscreen/ios_fullscreen/IOSFullScreen.xcworkspace) module with Xcode, and run it to view the result.
+
+
+## Things to know 
+
+* This example shows a fullscreen beagle screen using a flutter module.
+* The ios/android module is using the flutter module as dependency and it compiles every time you run your native platform app.
+* Flutter uses Method channels to emmit/receive data from other platforms, and its being shown on the examples.
+* Also to make beagle inform things to the native code, you can create a custom action to pass the data to the method channel and subscribe to it on your native code. Here is the flutter doc [Flutter Method Channels](https://flutter.dev/docs/development/platform-integration/platform-channels)
+
+
+## The dependency tree is:
+
+[Your Native APP Android/IOS] -> flutter module -> beagle_components -> beagle
+
+## Can you use a flutter module as a precompiled library 
+This is a work in progress sample that can be found here [prebuilt_module](add_to_app/prebuilt_module)
